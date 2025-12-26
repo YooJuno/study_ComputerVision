@@ -13,7 +13,7 @@ g++ main main.cpp $(pkg-config opencv4 --libs --cflags)
 - 이전에 설치되어 있는 OpenCV 삭제하고 설치해야함.
 
 ```bash
-pkg-config --modversion opencv
+pkg-config --modversion opencv4
 ```
 
 - OpenCV 설정 파일을 포함해서 패키지를 삭제
@@ -156,7 +156,7 @@ sudo make install
 cat /etc/ld.so.conf.d/*
 ```
 
-![Untitled](image/Untitled.png)
+![Untitled](images/Untitled.png)
 
 - /usr/local/lib을 찾은 경우나 못찾아서 추가한 작업을 한 경우 모두 컴파일시 opencv 라이브러리를 찾을 수 있도록 설정.
 
